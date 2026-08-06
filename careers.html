@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers | Hope South Sudan Foundation</title>
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand logo" href="index.html">
+        <img src="assets/images/logo.svg" alt="Hope South Sudan Foundation logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNav()">
+        <span>☰</span>
+      </button>
+
+      <div class="navbar-collapse" id="siteNav">
+        <div class="nav-links ms-auto">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="programs.html">Programs</a>
+          <a class="nav-link" href="projects.html">Projects</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="btn donate-btn nav-link" href="donate.html">Donate</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Join Our Team</h2>
+        <p>We are looking for passionate people working for a better South Sudan.</p>
+      </div>
+
+      <div class="card-box">
+        <h4>Program Officer</h4>
+        <p>Location: Juba</p>
+        <button class="donate-btn">Apply Now</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>© 2026 Hope South Sudan Foundation</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      const nav = document.getElementById('siteNav');
+      const button = document.querySelector('.navbar-toggler');
+      const isOpen = nav.classList.toggle('show');
+
+      button.setAttribute('aria-expanded', isOpen);
+    }
+  </script>
+</body>
+</html>

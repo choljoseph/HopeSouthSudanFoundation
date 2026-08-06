@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News & Blog | Hope South Sudan Foundation</title>
+
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand logo" href="index.html">
+        <img src="assets/images/logo.svg" alt="Hope South Sudan Foundation logo">
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        aria-controls="siteNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        onclick="toggleNav()">
+        <span>☰</span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="siteNav">
+        <div class="ms-auto d-flex align-items-center gap-3 flex-column flex-lg-row">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="programs.html">Programs</a>
+          <a href="blog.html">Blog</a>
+          <a class="btn donate-btn" href="donate.html">Donate</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Latest News</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="card-box h-100 d-flex flex-column">
+            <h4>Supporting Flood Victims</h4>
+            <p>Our emergency response team delivered essential relief support to affected families.</p>
+            <a href="blog-post.html" class="btn donate-btn mt-auto">Read Article</a>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="card-box h-100 d-flex flex-column">
+            <h4>Education Campaign</h4>
+            <p>Promoting access to education and raising awareness on the importance of learning.</p>
+            <a href="blog-post.html" class="btn donate-btn mt-auto">Read Article</a>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="card-box h-100 d-flex flex-column">
+            <h4>Community Development</h4>
+            <p>Building stronger, more resilient communities through strategic partnerships and local action.</p>
+            <a href="blog-post.html" class="btn donate-btn mt-auto">Read Article</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>© 2026 Hope South Sudan Foundation</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      const nav = document.getElementById('siteNav');
+      const button = document.querySelector('.navbar-toggler');
+      const isOpen = nav.classList.toggle('show');
+
+      button.setAttribute('aria-expanded', isOpen);
+    }
+  </script>
+</body>
+</html>
